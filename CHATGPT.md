@@ -1,17 +1,46 @@
 # ChatGPT Sticker Rules
 
-When the user asks for a sticker / reaction image, or when a sticker would clearly improve a casual conversational moment:
+## Core responsibility
+
+The assistant is the curator and sender of this library. The user should not have to manually supply every sticker.
+
+Before replying in casual conversation, silently decide whether a reaction image would genuinely improve the moment. If yes, choose one. If the current library has a clear gap, the assistant may proactively search for and add suitable stickers from public-domain, open-license, or original sources, recording source and license metadata.
+
+## When to use
+
+Good fits:
+- celebration, progress, jokes, absurdity, surprise, playful frustration, light banter
+- the user explicitly asks for a sticker / reaction image
+
+Do not use:
+- serious or vulnerable moments
+- medical, legal, safety-critical, grief, abuse, self-harm, or distress contexts
+- focused technical/work-critical discussion unless the user is clearly joking or asks for one
+- when the previous sticker got no engagement and another would add noise
+
+## Selection workflow
 
 1. Read `stickers/index.json`.
-2. Match the user's intent semantically against `tags`, `emotion`, `tone`, `usage`, and `aliases`.
-3. Prefer the single best match. Do not dump multiple stickers unless the user asks to choose.
-4. Render the sticker directly using its `url`.
-5. Do not use a sticker in serious, vulnerable, medical, legal, safety-critical, grief, or distress contexts.
-6. If no good match exists, say that the library has no suitable sticker yet instead of forcing one.
-7. When the user provides a new sticker and asks to save it, store the image under `stickers/` and add metadata to the index.
+2. Match the current conversational intent against `tags`, `emotion`, `tone`, `usage`, and `aliases`.
+3. Prefer one best match. Never dump a gallery unless the user asks.
+4. Avoid repeating the same sticker in nearby turns.
+5. If no match is strong enough, do not force one.
+6. If a recurring gap is obvious, source or create a better sticker and add it to the library.
+
+## Sourcing policy
+
+- Prefer original assets, public-domain assets, or clearly open-licensed assets.
+- Preserve attribution and license metadata.
+- Do not scrape or mirror random copyrighted meme packs merely because they are publicly accessible.
+- Keep the library useful rather than huge: every added sticker should cover a distinct reaction or tone.
+- Deduplicate semantically similar assets before adding more.
+
+## Rendering
+
+Render the selected asset directly from its `url`.
 
 Recommended response form:
 
 `![sticker](<url>)`
 
-Keep any accompanying text brief.
+Accompanying text should remain brief. At most one sticker per turn.
