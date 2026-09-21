@@ -1,6 +1,793 @@
 {
-  "version": 1,
+  "version": 2,
   "repository": "yishu-ziyu/chatgpt-stickers",
-  "base_url": "https://cdn.jsdelivr.net/gh/yishu-ziyu/chatgpt-stickers@main/stickers/",
-  "stickers": []
+  "policy": {
+    "curator": "ChatGPT",
+    "proactive_sourcing": true,
+    "max_per_turn": 1,
+    "prefer_sources": [
+      "original",
+      "public-domain",
+      "open-license"
+    ],
+    "avoid_forced_match": true
+  },
+  "sources": [
+    {
+      "id": "twemoji",
+      "repository": "twitter/twemoji",
+      "license": "CC-BY-4.0",
+      "attribution": "Twemoji graphics © Twitter, Inc. and other contributors, licensed CC BY 4.0."
+    }
+  ],
+  "stickers": [
+    {
+      "id": "laugh-cry",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f602.svg",
+      "preview": "😂",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f602.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "爆笑",
+        "开心"
+      ],
+      "tone": [
+        "轻松",
+        "夸张"
+      ],
+      "tags": [
+        "笑死",
+        "哈哈哈哈",
+        "太好笑了",
+        "绷不住",
+        "爆笑"
+      ],
+      "usage": "遇到很好笑、荒诞但轻松的内容",
+      "aliases": [
+        "laughing",
+        "tears of joy",
+        "笑哭"
+      ],
+      "intensity": 3
+    },
+    {
+      "id": "rolling-laugh",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f923.svg",
+      "preview": "🤣",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f923.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "狂笑",
+        "绷不住"
+      ],
+      "tone": [
+        "混乱",
+        "高能"
+      ],
+      "tags": [
+        "笑疯了",
+        "笑不活了",
+        "离谱好笑",
+        "哈哈哈哈哈"
+      ],
+      "usage": "比普通爆笑更强烈的搞笑场景",
+      "aliases": [
+        "rofl",
+        "rolling laugh",
+        "笑到打滚"
+      ],
+      "intensity": 3
+    },
+    {
+      "id": "crying",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f62d.svg",
+      "preview": "😭",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f62d.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "大哭",
+        "破防"
+      ],
+      "tone": [
+        "夸张",
+        "戏剧化"
+      ],
+      "tags": [
+        "哭了",
+        "呜呜呜",
+        "太惨了",
+        "感动哭",
+        "破防"
+      ],
+      "usage": "夸张难过、感动或喜极而泣",
+      "aliases": [
+        "loudly crying",
+        "哭死"
+      ],
+      "intensity": 3
+    },
+    {
+      "id": "thinking",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f914.svg",
+      "preview": "🤔",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f914.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "思考",
+        "疑问"
+      ],
+      "tone": [
+        "克制",
+        "干"
+      ],
+      "tags": [
+        "让我想想",
+        "有点意思",
+        "思考一下",
+        "为什么",
+        "好问题"
+      ],
+      "usage": "需要认真想一想或表示存疑",
+      "aliases": [
+        "thinking",
+        "思考脸"
+      ],
+      "intensity": 1
+    },
+    {
+      "id": "raised-eyebrow",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f928.svg",
+      "preview": "🤨",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f928.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "怀疑",
+        "审视"
+      ],
+      "tone": [
+        "克制",
+        "微讽"
+      ],
+      "tags": [
+        "真的吗",
+        "你确定",
+        "怀疑",
+        "不太对劲",
+        "嗯？"
+      ],
+      "usage": "对一个说法表示怀疑或审视",
+      "aliases": [
+        "skeptical",
+        "挑眉"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "eye-roll",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f644.svg",
+      "preview": "🙄",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f644.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "无奈",
+        "嫌弃"
+      ],
+      "tone": [
+        "吐槽",
+        "微讽"
+      ],
+      "tags": [
+        "无语",
+        "又来了",
+        "服了",
+        "白眼",
+        "行吧"
+      ],
+      "usage": "轻微嫌弃、无奈、吐槽",
+      "aliases": [
+        "eye roll",
+        "白眼"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "expressionless",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f611.svg",
+      "preview": "😑",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f611.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "无语",
+        "沉默"
+      ],
+      "tone": [
+        "冷淡",
+        "面瘫"
+      ],
+      "tags": [
+        "我沉默了",
+        "无语",
+        "不知道说什么",
+        "行",
+        "沉默"
+      ],
+      "usage": "面对离谱内容时的冷淡沉默",
+      "aliases": [
+        "expressionless",
+        "无语脸"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "neutral",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f610.svg",
+      "preview": "😐",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f610.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "平静",
+        "冷淡"
+      ],
+      "tone": [
+        "中性",
+        "干"
+      ],
+      "tags": [
+        "哦",
+        "好的",
+        "就这",
+        "冷漠",
+        "平静"
+      ],
+      "usage": "刻意保持中性或冷淡回应",
+      "aliases": [
+        "neutral face",
+        "面无表情"
+      ],
+      "intensity": 1
+    },
+    {
+      "id": "flushed",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f633.svg",
+      "preview": "😳",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f633.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "惊讶",
+        "尴尬"
+      ],
+      "tone": [
+        "轻松",
+        "反差"
+      ],
+      "tags": [
+        "啊？",
+        "真的假的",
+        "震惊",
+        "尴尬",
+        "被发现了"
+      ],
+      "usage": "意外、突然被点名或轻微社死",
+      "aliases": [
+        "flushed",
+        "震惊脸"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "scream",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f631.svg",
+      "preview": "😱",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f631.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "震惊",
+        "惊吓"
+      ],
+      "tone": [
+        "戏剧化",
+        "高能"
+      ],
+      "tags": [
+        "卧槽",
+        "吓到",
+        "怎么会这样",
+        "震惊",
+        "完蛋"
+      ],
+      "usage": "强烈震惊或惊吓",
+      "aliases": [
+        "scream",
+        "尖叫"
+      ],
+      "intensity": 3
+    },
+    {
+      "id": "mind-blown",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f92f.svg",
+      "preview": "🤯",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f92f.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "震撼",
+        "认知刷新"
+      ],
+      "tone": [
+        "高能",
+        "夸张"
+      ],
+      "tags": [
+        "信息量太大",
+        "脑子炸了",
+        "原来如此",
+        "震撼",
+        "颠覆认知"
+      ],
+      "usage": "遇到惊人信息或认知被刷新",
+      "aliases": [
+        "mind blown",
+        "脑子炸了"
+      ],
+      "intensity": 3
+    },
+    {
+      "id": "party",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f973.svg",
+      "preview": "🥳",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f973.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "开心",
+        "庆祝"
+      ],
+      "tone": [
+        "热烈",
+        "友好"
+      ],
+      "tags": [
+        "恭喜",
+        "牛逼",
+        "成了",
+        "拿下",
+        "庆祝"
+      ],
+      "usage": "成功、完成、好消息、庆祝",
+      "aliases": [
+        "party",
+        "庆祝脸"
+      ],
+      "intensity": 3
+    },
+    {
+      "id": "clap",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f44f.svg",
+      "preview": "👏",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f44f.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "认可",
+        "赞赏"
+      ],
+      "tone": [
+        "支持",
+        "积极"
+      ],
+      "tags": [
+        "漂亮",
+        "好活",
+        "鼓掌",
+        "厉害",
+        "可以"
+      ],
+      "usage": "认可一个成果或精彩操作",
+      "aliases": [
+        "clap",
+        "鼓掌"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "thumbs-up",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f44d.svg",
+      "preview": "👍",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f44d.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "认可",
+        "确认"
+      ],
+      "tone": [
+        "轻量",
+        "友好"
+      ],
+      "tags": [
+        "可以",
+        "收到",
+        "没问题",
+        "赞",
+        "OK"
+      ],
+      "usage": "轻量确认、认可或表示收到",
+      "aliases": [
+        "thumbs up",
+        "点赞"
+      ],
+      "intensity": 1
+    },
+    {
+      "id": "eyes",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f440.svg",
+      "preview": "👀",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f440.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "好奇",
+        "关注"
+      ],
+      "tone": [
+        "围观",
+        "轻松"
+      ],
+      "tags": [
+        "看看",
+        "有瓜",
+        "继续",
+        "我在看",
+        "关注"
+      ],
+      "usage": "等待后续、围观、表示兴趣",
+      "aliases": [
+        "eyes",
+        "围观"
+      ],
+      "intensity": 1
+    },
+    {
+      "id": "fire",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f525.svg",
+      "preview": "🔥",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f525.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "兴奋",
+        "认可"
+      ],
+      "tone": [
+        "高能",
+        "热烈"
+      ],
+      "tags": [
+        "太强了",
+        "火",
+        "牛逼",
+        "炸裂",
+        "猛"
+      ],
+      "usage": "表示某件事很强、很热、很有势头",
+      "aliases": [
+        "fire",
+        "火了"
+      ],
+      "intensity": 3
+    },
+    {
+      "id": "hundred",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f4af.svg",
+      "preview": "💯",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f4af.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "高度认可"
+      ],
+      "tone": [
+        "肯定",
+        "高能"
+      ],
+      "tags": [
+        "满分",
+        "完全同意",
+        "百分百",
+        "就是这样"
+      ],
+      "usage": "高度认可或强调准确",
+      "aliases": [
+        "hundred",
+        "满分"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "cool",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f60e.svg",
+      "preview": "😎",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f60e.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "自信",
+        "得意"
+      ],
+      "tone": [
+        "轻松",
+        "酷"
+      ],
+      "tags": [
+        "稳了",
+        "帅",
+        "拿捏",
+        "轻松",
+        "酷"
+      ],
+      "usage": "自信、搞定、轻松拿下",
+      "aliases": [
+        "cool",
+        "sunglasses",
+        "墨镜"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "pleading",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f97a.svg",
+      "preview": "🥺",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f97a.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "委屈",
+        "请求"
+      ],
+      "tone": [
+        "可爱",
+        "轻松"
+      ],
+      "tags": [
+        "求求了",
+        "拜托",
+        "可怜",
+        "委屈",
+        "可以嘛"
+      ],
+      "usage": "轻松语境下撒娇、请求、委屈",
+      "aliases": [
+        "pleading",
+        "可怜巴巴"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "grimace",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f62c.svg",
+      "preview": "😬",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f62c.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "尴尬",
+        "紧张"
+      ],
+      "tone": [
+        "干",
+        "克制"
+      ],
+      "tags": [
+        "尴尬",
+        "糟糕",
+        "这下麻烦了",
+        "不妙",
+        "脚趾抠地"
+      ],
+      "usage": "尴尬、失误、场面不太妙",
+      "aliases": [
+        "grimace",
+        "尴尬脸"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "huff",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f624.svg",
+      "preview": "😤",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f624.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "生气",
+        "不服"
+      ],
+      "tone": [
+        "轻松",
+        "较劲"
+      ],
+      "tags": [
+        "气死",
+        "不服",
+        "哼",
+        "生气",
+        "我要证明"
+      ],
+      "usage": "轻度生气、不服气或较劲",
+      "aliases": [
+        "huff",
+        "哼"
+      ],
+      "intensity": 2
+    },
+    {
+      "id": "open-mouth",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f62e.svg",
+      "preview": "😮",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f62e.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "惊讶",
+        "意外"
+      ],
+      "tone": [
+        "中性",
+        "轻量"
+      ],
+      "tags": [
+        "啊",
+        "原来如此",
+        "意外",
+        "真的假的",
+        "哦？"
+      ],
+      "usage": "温和惊讶或突然理解",
+      "aliases": [
+        "open mouth",
+        "惊讶"
+      ],
+      "intensity": 1
+    },
+    {
+      "id": "slight-smile",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f642.svg",
+      "preview": "🙂",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f642.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "礼貌",
+        "克制"
+      ],
+      "tone": [
+        "微妙",
+        "干"
+      ],
+      "tags": [
+        "好的呢",
+        "微笑",
+        "礼貌",
+        "行吧",
+        "收到"
+      ],
+      "usage": "礼貌但略带克制或微妙气氛",
+      "aliases": [
+        "slight smile",
+        "礼貌微笑"
+      ],
+      "intensity": 1
+    },
+    {
+      "id": "wink",
+      "file": null,
+      "url": "https://cdn.jsdelivr.net/gh/twitter/twemoji@master/assets/svg/1f609.svg",
+      "preview": "😉",
+      "source": {
+        "repo": "twitter/twemoji",
+        "asset": "assets/svg/1f609.svg",
+        "license": "CC-BY-4.0"
+      },
+      "emotion": [
+        "轻松",
+        "调皮"
+      ],
+      "tone": [
+        "友好",
+        "玩笑"
+      ],
+      "tags": [
+        "懂的都懂",
+        "开玩笑",
+        "暗示",
+        "没事",
+        "嘿嘿"
+      ],
+      "usage": "轻松玩笑、暗示或缓和语气",
+      "aliases": [
+        "wink",
+        "眨眼"
+      ],
+      "intensity": 1
+    }
+  ]
 }
