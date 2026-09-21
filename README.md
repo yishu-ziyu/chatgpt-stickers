@@ -1,25 +1,37 @@
 # ChatGPT Stickers
 
-A tiny personal sticker library for ChatGPT conversations.
+A personal reaction-image library curated for ChatGPT conversations.
 
-The repository keeps sticker images plus a semantic index so ChatGPT can choose an appropriate sticker by meaning instead of by filename.
+The important rule is simple: **ChatGPT owns the curation work.** The user does not need to keep feeding the library manually. When a conversational gap appears, the assistant can source or create a better reaction image, tag it, and add it to the library.
+
+## Current starter pack
+
+The library starts with 24 broadly useful reaction assets covering:
+- laughter / absurdity
+- surprise / disbelief
+- thinking / skepticism
+- speechlessness / awkwardness
+- celebration / approval
+- curiosity / watching
+- playful frustration
+- polite or dry reactions
+
+The starter pack uses Twemoji assets. Future additions should prefer original, public-domain, or clearly open-licensed sources.
 
 ## Structure
 
-- `stickers/` — image files
-- `stickers/index.json` — semantic metadata and CDN URLs
-- `CHATGPT.md` — usage rules for ChatGPT
+- `stickers/index.json` — semantic metadata, source/license info, and render URLs
+- `CHATGPT.md` — proactive usage and sourcing rules
+- `stickers/` — optional locally stored assets
 
-## CDN
+## How selection works
 
-Public images can be served through jsDelivr:
+ChatGPT matches the current conversation against each asset's:
+`emotion`, `tone`, `tags`, `usage`, `aliases`, and `intensity`.
 
-`https://cdn.jsdelivr.net/gh/yishu-ziyu/chatgpt-stickers@main/stickers/<filename>`
+The goal is not to maximize the number of stickers. The goal is to have a small library with good semantic coverage, then expand only when real conversations expose gaps.
 
-## Add a sticker
+## Attribution
 
-1. Put the image in `stickers/`.
-2. Add one entry to `stickers/index.json`.
-3. Give it short tags describing emotion, tone, situation, and intensity.
-
-The index is intentionally simple so it can be searched quickly in a normal ChatGPT conversation.
+Twemoji graphics © Twitter, Inc. and other contributors, licensed under CC BY 4.0.
+Source: https://github.com/twitter/twemoji
